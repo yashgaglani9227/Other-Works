@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Portal</title>
+</head>
+<body>
+
+    <h1 align="center">🎓 Academic Registration Portal</h1>
+
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        📢 <strong>Important Note:</strong> Fall Semester Registration is now officially open! Please complete all mandatory form fields accurately.
+    </marquee>
+
+    <hr>
+
+    <div align="center">
+        <img src="student.jpg" alt="Student Profile Preview Layout" width="130" height="130" style="border-radius: 50%;">
+        <h3>New Applicant Enrollment</h3>
+        <p>Please provide your personal, academic, and contact metrics below.</p>
+    </div>
+
+    <hr>
+
+    <h2 align="left">📝 Registration Form</h2>
+    <form action="#" method="POST">
+        
+        <fieldset>
+            <legend><strong>Personal Profile Information</strong></legend>
+            <br>
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="johndoe@university.edu" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <label for="department">Select Department:</label>
+            <select id="department" name="department" required>
+                <option value="">-- Choose a Department --</option>
+                <option value="cs">💻 Computer Science & Engineering</option>
+                <option value="ee">⚡ Electrical Engineering</option>
+                <option value="me">⚙️ Mechanical Engineering</option>
