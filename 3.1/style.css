@@ -1,0 +1,39 @@
+body{
+    background:#f4f4f4;
+    font-family:Arial, sans-serif;
+}
+
+.poster{
+    width:700px;
+    margin:30px auto;
+    background:#fff8dc;
+    border:3px solid black;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#003366;
+}
+
+hr{
+    border:1px solid black;
+}
+
+ol{
+    color:brown;
+    font-size:18px;
+}
+
+ul{
+    color:green;
+    font-size:17px;
+}
+
+.quote{
+    text-align:center;
+    color:darkgreen;
+    font-style:italic;
+    font-weight:bold;
+    margin-top:25px;
+}

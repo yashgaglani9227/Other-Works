@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Profile Card Effect</title>
+    <style>
+        /* Base Page Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #701552 0%, #280b30 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Responsive Grid Container layout */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 900px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Profile Card Base Design */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            
+            /* Animations & Customization transition effects */
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                        box-shadow 0.4s ease, 
+                        filter 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Customizing Individual Card Gradient Colors using :nth-child(n) */
+        .card:nth-child(1) {
+            background: linear-gradient(180deg, #8e2de2 0%, #4a00e0 100%);
+        }
+
+        .card:nth-child(2) {
+            background: linear-gradient(180deg, #11998e 0%, #38ef7d 100%);
+        }
+
+        .card:nth-child(3) {
+            background: linear-gradient(180deg, #ff9966 0%, #ff5e62 100%);
+        }
+
+        /* Card Numbers Styling */
+        .card h2 {
+            font-size: 70px;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            letter-spacing: -2px;
+            opacity: 0.95;
+        }
+
+        /* Profile Bio / Content Styling */
+        .card p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+            opacity: 0.85;
+            font-weight: 300;
+        }
+
+        /* Dynamic Hover Visual Transforms */
+        .card:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+            filter: brightness(1.1);
+        }
+
+        /* Media Queries for Layout Flexibility (grid-template-columns adjustments) */
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container Grid Layout -->
+    <div class="card-container">
+        
+        <!-- Card 1 -->
+        <div class="card">
+            <h2>01</h2>
+            <p>Creative Developer specializing in interactive vector animation layouts and core UI micro-interactions.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <h2>02</h2>
+            <p>Frontend Engineer managing responsive architecture grids, transitions, and performance optimization.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <h2>03</h2>
+            <p>UI Designer focused on gradient harmony, interactive user behaviors, and delightful web experiences.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

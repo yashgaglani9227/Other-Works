@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+.container{
+    width:350px;
+    margin:30px auto;
+}
+
+h2{
+    text-align:center;
+}
+
+.morning{
+    background:#d9f1ff;
+    border:2px solid #7db8d8;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:15px;
+}
+
+.afternoon{
+    background:#fff4b8;
+    border:2px solid #d8c35a;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:15px;
+}
+
+.evening{
+    background:#e8dcff;
+    border:2px solid #9c8cd8;
+    border-radius:10px;
+    padding:15px;
+}
+
+h3{
+    margin-top:0;
+}
+
+ul{
+    margin-left:20px;
+}
