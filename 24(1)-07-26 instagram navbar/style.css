@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+/* Header Text */
+.output-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/* Outer Navbar Box with Black Border */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid #000000;
+  padding: 8px 25px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Logo Design */
+.logo {
+  font-family: 'Cookie', cursive;
+  font-size: 32px;
+  color: #000000;
+}
+
+/* Search Bar */
+.search-bar {
+  flex-grow: 0.5;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px 20px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #777777;
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #a0a0a0;
+}
+
+/* Right Menu Area */
+.right-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Create Post Button */
+.create-post-btn {
+  background: linear-gradient(135deg, #ff6b6b, #ff4757);
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.create-post-btn:hover {
+  opacity: 0.9;
+}
+
+/* Notification Bell with Badge */
+.notification-icon {
+  position: relative;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-icon .badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
